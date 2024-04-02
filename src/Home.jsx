@@ -31,8 +31,8 @@ const Home = () => {
   return (
     <div className="flex justify-center w-full">
       <style>{keyframes}</style>
-      <div className="xs:grid  grid-cols-1 gap-2 sm:grid grid-cols-1 gap-2  justify-center md:grid grid-cols-1 gap-2  justify-center   lg:flex ">
-        <div className="xs:w-64 xs:h-64 xs:mt-8  xs:place-self-center sm:w-72 sm:h-72 flex items-center justify-center">
+      <div className="xl:-mt-14 xs:grid  grid-cols-1 gap-2 sm:grid grid-cols-1 gap-2  justify-center md:grid grid-cols-1 gap-2  justify-center   lg:flex ">
+        <div className="xs:w-64 xs:h-64 xs:mt-8   xs:place-self-center sm:w-72 sm:h-72 flex items-center justify-center">
           <p
             className="text-center text-black lg:text-md "
             style={animationStyleFromLeft}>
@@ -52,7 +52,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="lg:w-96 2xl:mt-[25rem] xl:mt-[25rem]  lg:mt-[32rem] md:mt-6 xs:w-96 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72  overflow-hidden">
+        <div className="lg:w-96 2xl:mt-[28rem] xl:mt-[25rem]  lg:mt-[32rem] md:mt-6 xs:w-96 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72  overflow-hidden">
           <img
             src={myImage}
             alt="Your image description"
@@ -68,7 +68,7 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="xs:w-64 xs:h-64 xs:mt-8 xs:place-self-center sm:w-72 sm:h-72 md:mt-32 text-md ">
+        <div className="xs:w-64 xs:h-64 xs:mt-8  xs:place-self-center sm:w-72 sm:h-72 md:mt-32 text-md ">
           <p
             className="text-center text-black "
             style={animationStyleFromRight}>
