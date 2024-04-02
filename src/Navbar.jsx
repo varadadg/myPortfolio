@@ -8,7 +8,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="bg-black fixed w-full z-10 text-white font-now h-8 flex justify-end items-center text-center text-sm xs:mt-2 sm:mt-0 md:mt-0 lg:mt-0">
+    <div className="bg-black fixed w-full z-10 text-white font-now h-8 flex justify-end items-center text-center text-sm xs:mt-0 sm:mt-0 md:mt-0 lg:mt-0">
       <ul className="flex justify-end items-center p-0 h-16 mx-8 md:mx-12 lg:mx-20 xl:mx-24">
         <li className="mr-4 md:mr-6 lg:mr-8 xl:mr-10 xs:hidden sm:block text-white ">
           <NavLink to="/"> HOME</NavLink>
