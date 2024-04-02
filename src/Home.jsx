@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import myImage from "./assets/Varada.jpg"; // Import the image
-import Varada_Resume from "./Varada_Resume.pdf";
+import VARADA_GOND from "./VARADA_GOND.pdf";
 
 const Home = () => {
   const animationStyleFromLeft = {
@@ -42,8 +42,8 @@ const Home = () => {
             am working as a technology analyst in Infosys, building fully
             functional UI screens.{" "}
             <Link
-              to={Varada_Resume}
-              download="Varada-Resume"
+              to={VARADA_GOND}
+              download="Varada-Gond"
               target="_blank"
               rel="noreferrer"
               className="text-blue-500 hover:underline">
