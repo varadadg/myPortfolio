@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import myImage from "./assets/Varada.jpg"; // Import the image
-import VARADA_GOND from "./VARADA_GOND.pdf";
+import VARADA_GOND from "./Varada_Gond.pdf";
 
 const Home = () => {
   const animationStyleFromLeft = {
