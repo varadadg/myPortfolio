@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import myImage from "./assets/Varada.jpg"; // Import the image
-import VARADA_GOND from "./Varada_Gond.pdf";
-
+import VARADA_GOND from "./Varada-Gond.pdf";
 const Home = () => {
   const animationStyleFromLeft = {
     position: "relative",
@@ -31,16 +30,15 @@ const Home = () => {
   return (
     <div className="flex justify-center w-full">
       <style>{keyframes}</style>
-      <div className="xl:-mt-14 xs:grid  grid-cols-1 gap-2 sm:grid grid-cols-1 gap-2  justify-center md:grid grid-cols-1 gap-2  justify-center   lg:flex ">
-        <div className="xs:w-64 xs:h-64 xs:mt-8   xs:place-self-center sm:w-72 sm:h-72 flex items-center justify-center">
+      <div className="xs:grid  grid-cols-1 gap-2 sm:grid grid-cols-1 gap-2  justify-center md:grid grid-cols-1 gap-2  justify-center   lg:flex ">
+        <div className="xs:w-64 xs:h-64 xs:mt-8  xs:place-self-center sm:w-72 sm:h-72 flex items-center justify-center">
           <p
-            className="text-center text-black lg:text-md "
+            className="text-center text-black lg:text-xl "
             style={animationStyleFromLeft}>
-            I am a frontend developer living in Karnataka, India. I enjoy
-            building everything from scratch using React. With every line of
-            code, I strive to make the web aesthetically pleasing. Currently, I
-            am working as a technology analyst in Infosys, building fully
-            functional UI screens.{" "}
+            I am a web developer living in Karnataka, India. With expertise in
+            JavaScript, TypeScript, HTML5, CSS3, and frameworks like React.js,
+            Tailwind CSS, and React-Bootstrap, I specialize in crafting
+            responsive and user-friendly designs. Download Resume.{" "}
             <Link
               to={VARADA_GOND}
               download="Varada-Gond"
@@ -49,10 +47,13 @@ const Home = () => {
               className="text-blue-500 hover:underline">
               Download Resume
             </Link>
+            {/* <Link to="/projects" className="text-blue-500 hover:underline">
+              here!
+            </Link> */}
           </p>
         </div>
 
-        <div className="lg:w-96 2xl:mt-[28rem] xl:mt-[25rem]  lg:mt-[32rem] md:mt-6 xs:w-96 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72  overflow-hidden">
+        <div className="lg:w-96 2xl:mt-[25rem] xl:mt-[25rem]  lg:mt-[32rem] md:mt-6 xs:w-96 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72  overflow-hidden">
           <img
             src={myImage}
             alt="Your image description"
@@ -68,10 +69,8 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="xs:w-64 xs:h-64 xs:mt-8  xs:place-self-center sm:w-72 sm:h-72 md:mt-32 text-md ">
-          <p
-            className="text-center text-black "
-            style={animationStyleFromRight}>
+        <div className="xs:w-64 xs:h-64 xs:mt-8 xs:place-self-center sm:w-72 sm:h-72 md:mt-32 lg:text-xl ">
+          <p className="text-center text-black" style={animationStyleFromRight}>
             I write poetry centered on mental health and provide spiritual
             counsel to individuals navigating life's challenges through tarot
             cards. Our Instagram community boasts a following of 40k. Feel free
@@ -91,162 +90,3 @@ const Home = () => {
 };
 
 export default Home;
-// import React, { useState } from "react";
-
-// function LoginForm() {
-//   const [formData, setFormData] = useState({
-//     email: "",
-//     password: "",
-//     dropdownValue: "", // Added dropdownValue
-//     checkboxChecked: false, // Added checkboxChecked
-//     textBoxValue: "", // Added textBoxValue
-//   });
-
-//   const [errors, setErrors] = useState({});
-//   const [submitted, setSubmitted] = useState(false);
-
-//   const handleInputChange = (e) => {
-//     const { name, value, type, checked } = e.target;
-//     const inputValue = type === "checkbox" ? checked : value;
-
-//     setFormData({
-//       ...formData,
-//       [name]: inputValue,
-//     });
-//   };
-
-//   const validateForm = () => {
-//     let isValid = true;
-//     const newErrors = {};
-
-//     // Validate email
-//     if (!formData.email) {
-//       newErrors.email = "Email is required";
-//       isValid = false;
-//     }
-
-//     // Validate password
-//     if (!formData.password) {
-//       newErrors.password = "Password is required";
-//       isValid = false;
-//     }
-
-//     // Validate dropdown
-//     if (!formData.dropdownValue) {
-//       newErrors.dropdownValue = "Please select an option";
-//       isValid = false;
-//     }
-
-//     // Validate checkbox
-//     if (!formData.checkboxChecked) {
-//       newErrors.checkboxChecked = "Please check the checkbox";
-//       isValid = false;
-//     }
-
-//     // Validate text box
-//     if (!formData.textBoxValue.trim()) {
-//       newErrors.textBoxValue = "Please enter a value";
-//       isValid = false;
-//     }
-
-//     setErrors(newErrors);
-//     return isValid;
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-
-//     if (validateForm()) {
-//       // Form is valid, you can submit or process the data here
-//       console.log("Form data:", formData);
-//       setSubmitted(true); // Set a submitted flag
-//     } else {
-//       // Form is not valid, display error messages
-//     }
-//   };
-
-//   const isFormValid = Object.keys(errors).length === 0;
-
-//   return (
-//     <div>
-//       <h2>Login</h2>
-//       {submitted ? (
-//         <div className="success-message">Login successful!</div>
-//       ) : (
-//         <form onSubmit={handleSubmit}>
-//           <div>
-//             <label>Email:</label>
-//             <input
-//               type="text"
-//               name="email"
-//               value={formData.email}
-//               onChange={handleInputChange}
-//             />
-//             {errors.email && <div className="error">{errors.email}</div>}
-//           </div>
-
-//           <div>
-//             <label>Password:</label>
-//             <input
-//               type="password"
-//               name="password"
-//               value={formData.password}
-//               onChange={handleInputChange}
-//             />
-//             {errors.password && <div className="error">{errors.password}</div>}
-//           </div>
-
-//           <div>
-//             <label>Dropdown:</label>
-//             <select
-//               name="dropdownValue"
-//               value={formData.dropdownValue}
-//               onChange={handleInputChange}>
-//               <option value="">Select an option</option>
-//               <option value="option1">Option 1</option>
-//               <option value="option2">Option 2</option>
-//               <option value="option3">Option 3</option>
-//             </select>
-//             {errors.dropdownValue && (
-//               <div className="error">{errors.dropdownValue}</div>
-//             )}
-//           </div>
-
-//           <div>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 name="checkboxChecked"
-//                 checked={formData.checkboxChecked}
-//                 onChange={handleInputChange}
-//               />
-//               Checkbox
-//             </label>
-//             {errors.checkboxChecked && (
-//               <div className="error">{errors.checkboxChecked}</div>
-//             )}
-//           </div>
-
-//           <div>
-//             <label>Text Box:</label>
-//             <input
-//               type="text"
-//               name="textBoxValue"
-//               value={formData.textBoxValue}
-//               onChange={handleInputChange}
-//             />
-//             {errors.textBoxValue && (
-//               <div className="error">{errors.textBoxValue}</div>
-//             )}
-//           </div>
-
-//           <button type="submit" disabled={!isFormValid}>
-//             Login
-//           </button>
-//         </form>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default LoginForm;

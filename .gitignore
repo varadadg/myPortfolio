@@ -1,3 +1,10 @@
+# System files
+.DS_Store
+NTUSER.DAT*
+*.exe
+*.lnk
+*.log
+
 # Logs
 logs
 *.log
@@ -22,3 +29,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+Documents/
+Downloads/
+Pictures/
+Videos/
+Music/
+Application Data/
+Local Settings/
+Recent/
+Cookies/
+SendTo/
+Start Menu/
+Templates/
+Contacts/
+Favorites/
