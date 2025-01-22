@@ -42,11 +42,13 @@ const App = () => {
               PROJECTS
             </Link>
           </NavbarItem>
+
           <NavbarItem>
             <Link
               color="foreground"
-              href="https://www.behance.net/gallery/213817249/MYSTIC-APP">
-              BEHANCE
+              href="https://crystalvisionsbykali.vercel.app/"
+              aria-current="page">
+              WEBSITE WORK
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
@@ -65,10 +67,10 @@ const App = () => {
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              {item === "Behance" ? (
+              {item === "Website work" ? (
                 // External link for Behance
                 <a
-                  href="https://www.behance.net/gallery/213817249/MYSTIC-APP"
+                  href="https://crystalvisionsbykali.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full">

@@ -16,14 +16,15 @@ const Navbar = () => {
         <li className="mr-4 md:mr-6 lg:mr-8 xl:mr-10 xs:hidden sm:block text-white">
           <NavLink to="/projects">PROJECTS</NavLink>
         </li>
+
         <li className="mr-4 md:mr-6 lg:mr-8 xl:mr-10 xs:hidden sm:block text-white">
           {/* Added Instagram link */}
           <a
-            href="https://www.instagram.com/elixirofthoughts"
+            href="https://crystalvisionsbykali.vercel.app/"
             className="text-white"
             target="_blank"
             rel="noopener noreferrer">
-            INSTA
+            TAROT WEBSITE (in progress)
           </a>
         </li>
         <li
@@ -79,6 +80,15 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer">
             INSTA
+          </a>
+        </li>
+        <li className=" w-full text-white border-b border-white">
+          <a
+            href="https://crystalvisionsbykali.vercel.app/"
+            className="text-white"
+            target="_blank"
+            rel="noopener noreferrer">
+            TAROT WEBSITE(on-going)
           </a>
         </li>
       </ul>

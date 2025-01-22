@@ -31,7 +31,7 @@ const Home = () => {
     <div className="flex justify-center w-full">
       <style>{keyframes}</style>
       <div className="xs:grid   grid-cols-1 gap-2 sm:grid grid-cols-1 gap-2  justify-center md:grid grid-cols-1 gap-2  justify-center   lg:flex ">
-        <div className="xs:w-64 xs:h-64 lg:text-lg  xs:place-self-center sm:w-72 sm:h-72 flex items-center justify-center">
+        <div className="xs:w-64 xs:h-64 lg:text-lg  xs:place-self-center xl:-mt-[8rem] sm:w-72 sm:h-72 flex items-center justify-center">
           <p
             className="text-center text-black  "
             style={animationStyleFromLeft}>
@@ -53,7 +53,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="lg:w-96 2xl:mt-[23rem] xl:mt-[25rem]  lg:mt-[32rem] md:-mt-[4rem] xs:w-64 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72   overflow-hidden">
+        <div className="lg:w-96 2xl:mt-[23rem] xl:-mt-[8rem]    lg:mt-[32rem] md:-mt-[4rem] xs:w-64 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72   overflow-hidden">
           <img
             src={myImage}
             alt="Your image description"
@@ -69,7 +69,7 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="xs:w-64 xs:h-64 xs:mt-8 xs:place-self-center sm:w-72 sm:h-72 md:mt-8 lg:text-lg sm:text-lg ">
+        <div className="xs:w-64 xs:h-64 xs:mt-8 xs:place-self-center xl:-mt-[6rem]  sm:w-72 sm:h-72 md:mt-8 lg:text-lg sm:text-lg ">
           <p className="text-center text-black" style={animationStyleFromRight}>
             I write poetry centered on mental health and provide spiritual
             counsel to individuals navigating life's challenges through tarot
