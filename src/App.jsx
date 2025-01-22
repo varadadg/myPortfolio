@@ -20,7 +20,7 @@ import {
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "LinkedIn", "Projects", "Behance"];
+  const menuItems = ["Home", "LinkedIn", "Projects", "Website work"];
   return (
     <div>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
