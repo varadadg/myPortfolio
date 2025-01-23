@@ -53,7 +53,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="lg:w-96 2xl:mt-[23rem] xl:-mt-[8rem]    lg:mt-[32rem] md:-mt-[4rem] xs:w-64 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72   overflow-hidden">
+        <div className="lg:w-96 2xl:mt-[23rem] xl:mt-[28rem]    lg:mt-[14rem] md:-mt-[4rem] xs:w-64 xs:h-64 xs:-mt-[1.9rem] bg-contain bg-center xs:place-self-center sm:w-72 sm:h-72   overflow-hidden">
           <img
             src={myImage}
             alt="Your image description"
